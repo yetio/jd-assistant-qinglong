@@ -10,7 +10,7 @@ if __name__ == '__main__':
     # sku_ids = '100066167064'  # 商品id
     sku_ids = '100030659205'  # 商品id
     # sku_ids = '10085429975102'  # 商品id
-    area = '12_904_3373_62096'  # 区域id
+    area = '15_1213_3038'  # 区域id
     asst = Assistant()  # 初始化
     asst.login_by_QRcode()  # 扫码登陆
     while 1:
