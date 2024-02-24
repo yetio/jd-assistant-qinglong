@@ -4,7 +4,6 @@ import re
 
 
 def env(key):
-    return "pt_key=app_openAAJl2fipADC6jeaWpdOO0Qu4fQoNqFivD6U1gqp37moqaULOt5f-7oocFvZrIEpybp50O2Yu8uA;pt_pin=yetio";
     return os.environ.get(key)
 
 
