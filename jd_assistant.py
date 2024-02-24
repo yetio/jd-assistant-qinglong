@@ -34,6 +34,9 @@ from util import (
     split_area_id
 )
 
+from jdEnv import (
+    get_cookies
+)
 
 class Assistant(object):
 
@@ -69,6 +72,7 @@ class Assistant(object):
             pass
 
     def _load_cookies(self):
+        ''' 
         cookies_file = ''
         for name in os.listdir('./cookies'):
             if name.endswith('.cookies'):
@@ -76,6 +80,8 @@ class Assistant(object):
                 break
         with open(cookies_file, 'rb') as f:
             local_cookies = pickle.load(f)
+        '''
+        local_cookies = get_cookies()
         self.sess.cookies.update(local_cookies)
         self.is_login = self._validate_cookies()
 

@@ -1,6 +1,7 @@
 __pycache__/
 .idea/
 cookies/
+.conda
 
 *.log
 *.png
